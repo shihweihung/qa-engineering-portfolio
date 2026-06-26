@@ -1,22 +1,17 @@
-# QA Lead Knowledge Base
+# QA Engineering Portfolio
 
-A personal knowledge base for QA Lead interview preparation, quality engineering practice, and ongoing learning.
+Practical articles on test strategy, automation architecture, and quality engineering leadership.
 
-This site collects notes from real work experience, conversations, and self-study — organized so they are useful both during a job search and after landing a role.
+Every article is drawn from real engineering decisions. Each one follows the same format: problem, solution, real-world example, key takeaways. No theory for theory's sake.
 
-## What is here
+## Categories
 
-- **Interview** — QA Lead interview questions, answer frameworks, and company research notes
-- **QA & Leadership** — quality strategy, test planning, team practices, and process design
-- **Notes** — learning notes from discussions and research, organized by topic
-- **Case Studies** — generalized bug analyses and incident retrospectives
-
-## Who this is for
-
-Primarily for my own reference during a QA Lead job search. Written to be readable by anyone: hiring managers, engineering peers, or future teammates.
-
-## How to use this site
-
-- Use the search bar for fast lookups
-- Browse by section when exploring a topic
-- Each page is written to stand alone — no need to read in order
+- **[Test Strategy](test-strategy/index.md)** — Deciding what to test, how much, and when to stop
+- **[Playwright](playwright/index.md)** — Web automation for modern, dynamic interfaces
+- **[Appium & Mobile](appium/index.md)** — iOS and Android test architecture at scale
+- **[Python & Pytest](python/index.md)** — Test engineering fundamentals and advanced patterns
+- **[API Testing](api/index.md)** — Automated validation for backend services
+- **[CI/CD Integration](cicd/index.md)** — Making tests a meaningful part of the delivery pipeline
+- **[AI-Assisted Testing](ai-testing/index.md)** — Using AI in quality engineering workflows
+- **[Leadership](leadership/index.md)** — Building quality culture, managing teams, working across functions
+- **[Defect Analysis](defect-analysis/index.md)** — Understanding failures and preventing recurrence

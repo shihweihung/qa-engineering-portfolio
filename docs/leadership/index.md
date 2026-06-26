@@ -1,22 +1,12 @@
 # Leadership
 
-Notes on leading QA teams, building quality culture, and working effectively across functions.
+Building quality culture, managing teams, and working across functions.
 
-## Core topics
+QA leadership is not about owning quality — it is about making quality a shared engineering value. These articles document the decisions, frameworks, and conversations that move a team from viewing QA as a gate to viewing it as a capability.
 
-- **Team practices** — code review for tests, on-call rotation, bug triage, and retrospectives
-- **Quality culture** — how to make quality a shared responsibility, not just a QA team problem
-- **Mentoring and growth** — helping engineers grow their testing skills and judgment
-- **Stakeholder communication** — translating quality risk into language PMs and engineers act on
-- **Process design** — building lightweight processes that scale without slowing teams down
+## Articles
 
-## Pages in this section
-
-Notes will be added here as they are written.
-
-Topics planned:
-
-- How to run an effective bug triage
-- Building a quality culture without authority
-- How to push back on "just test it faster"
-- What makes a good QA Lead vs. a senior QA engineer
+- **[Building QA Culture](building-qa-culture.md)** — Influencing engineers and stakeholders to care about quality consistently
+- **[Bug Triage Systems](bug-triage.md)** — Running effective triage that produces decisions, not just discussion
+- **[Team Metrics That Matter](team-metrics.md)** — Measuring QA impact without gaming numbers or creating the wrong incentives
+- **[Cross-Team Collaboration](cross-team-collaboration.md)** — Working with engineering, product, and leadership to align on quality

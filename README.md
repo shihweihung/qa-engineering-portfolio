@@ -1,97 +1,72 @@
-# QA Interview Bible
+# QA Engineering Portfolio
 
-QA Interview Bible is a long-term public knowledge base for software quality, testing, and engineering communication. It is designed to be professional, reusable, and safe to share with future employers.
+**Senior QA / QA Lead / SDET**
 
-## Repository purpose
+A curated collection of practical articles, engineering decisions, and case studies from quality engineering work across mobile, web, and API products.
 
-This repository exists to document durable software engineering knowledge, especially in areas such as:
+---
 
-- quality engineering fundamentals
-- test strategy and planning
-- automation design
-- API and mobile testing
-- debugging and defect analysis
-- interview preparation
-- technical leadership and communication
+## Professional Summary
 
-The goal is not to preserve company-specific implementation details. The goal is to publish educational material that remains useful across teams, products, and industries.
+Quality engineer with experience leading QA for cross-platform products. Background spans test strategy, automation architecture, mobile testing (iOS and Android), and AI-assisted quality workflows. Comfortable as both a hands-on automation engineer and a team lead building quality culture from the ground up.
 
-## Public portfolio standards
+**Core skills:** Python · Playwright · Appium · pytest · CI/CD · API testing · AI-assisted testing · Team leadership
 
-This repository is public and should always remain suitable for external readers.
+---
 
-- Never include confidential, proprietary, regulated, or internal-only information.
-- Generalize all examples, incidents, workflows, architectures, and datasets.
-- Focus on transferable engineering reasoning instead of employer-specific process.
-- Write every page so it can teach someone outside the original context.
+## Portfolio Categories
 
-## Governance documents
+| Category | Focus |
+|---|---|
+| [Test Strategy](docs/test-strategy/) | Risk-based planning, coverage decisions, release readiness |
+| [Playwright](docs/playwright/) | Web automation patterns, async UI, cross-browser reliability |
+| [Appium & Mobile](docs/appium/) | iOS/Android architecture, device farms, mobile-specific challenges |
+| [Python & Pytest](docs/python/) | Fixture design, data-driven testing, custom reporting |
+| [API Testing](docs/api/) | Contract testing, automation patterns, response validation |
+| [CI/CD Integration](docs/cicd/) | Pipeline design, parallel execution, flaky test management |
+| [AI-Assisted Testing](docs/ai-testing/) | LLM test generation, testing AI products, AI-based maintenance |
+| [Leadership](docs/leadership/) | QA culture, bug triage, team metrics, cross-team influence |
+| [Defect Analysis](docs/defect-analysis/) | Root cause analysis, incident retrospectives, regression prevention |
 
-Repository governance is defined by the following documents:
+---
 
-- [CONTRIBUTING.md](/Users/swi/qa-interview-bible/CONTRIBUTING.md)
-- [STYLE_GUIDE.md](/Users/swi/qa-interview-bible/STYLE_GUIDE.md)
-- [SECURITY.md](/Users/swi/qa-interview-bible/SECURITY.md)
-- [AI_RULES.md](/Users/swi/qa-interview-bible/AI_RULES.md)
-- [DISCLAIMER.md](/Users/swi/qa-interview-bible/DISCLAIMER.md)
-- [CODE_OF_CONDUCT.md](/Users/swi/qa-interview-bible/CODE_OF_CONDUCT.md)
+## Featured Articles
 
-All contributors should read these files before adding or revising content.
+- **[Risk-Based Testing in Practice](docs/test-strategy/risk-based-testing.md)** — How to prioritize coverage when you cannot test everything
+- **[Handling Async UI in Playwright](docs/playwright/handling-async-ui.md)** — Reliable patterns for dynamic web interfaces
+- **[Building QA Culture Without Authority](docs/leadership/building-qa-culture.md)** — Influencing quality as a lead, not a gatekeeper
+- **[iOS and Android Shared Test Architecture](docs/appium/shared-architecture.md)** — One framework, two platforms
+- **[Automation Framework Adoption Decisions](docs/notes/automation-framework-adoption.md)** — When technical choices become political
 
-## Documentation sections
+---
 
-- Career
-- Resume
-- Interview
-- QA
-- Mobile
-- Automation
-- eReader
-- AI Testing
-- API
-- Leadership
-- Real Bugs
-- Company
-- Writing Templates
+## Article Format
 
-## Writing model
+Every article follows the same structure:
 
-Each article should be:
+1. **Problem** — What goes wrong, or why this decision is hard
+2. **Solution** — The engineering approach
+3. **Real-world example** — A generalized scenario with concrete detail
+4. **Key takeaways** — What to remember and reuse
 
-- educational
-- reusable
-- technically accurate
-- professionally written
-- suitable for a public engineering documentation site
+---
 
-Reusable page templates are available in [docs/writing-templates](/Users/swi/qa-interview-bible/docs/writing-templates).
+## Other Repositories
 
-## Local preview
+- **playwright-web-automation** — Production-grade Playwright framework with Page Object Model, CI integration, and parallel execution
+- **appium-mobile-framework** — Shared iOS/Android test architecture using Appium and pytest
+- **pytest-api-testing** — API test suite with contract testing, data-driven cases, and custom reporting
 
-Create a virtual environment and install dependencies:
+---
+
+## Local Preview
 
 ```bash
 python3 -m venv .venv
-.venv/bin/pip install --upgrade pip setuptools wheel
 .venv/bin/pip install -r requirements.txt
-```
-
-Build the site:
-
-```bash
-.venv/bin/mkdocs build
-```
-
-Serve the site locally:
-
-```bash
 .venv/bin/mkdocs serve
 ```
 
-## Deployment
+Published site: `https://shihweihung.github.io/qa-interview-bible/`
 
-GitHub Actions builds and deploys the documentation site to GitHub Pages on pushes to `master`.
-
-Published site:
-
-- `https://shihweihung.github.io/qa-interview-bible/`
+*All examples are generalized. No confidential employer information is included.*

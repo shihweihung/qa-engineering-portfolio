@@ -1,5 +1,5 @@
-site_name: QA Interview Bible
-site_description: Professional QA and software testing knowledge base
+site_name: QA Engineering Portfolio
+site_description: Practical articles on test strategy, automation, and quality engineering leadership
 site_url: https://shihweihung.github.io/qa-interview-bible/
 repo_url: https://github.com/shihweihung/qa-interview-bible
 repo_name: shihweihung/qa-interview-bible
@@ -89,14 +89,58 @@ extra:
 copyright: Copyright &copy; 2026 Shih-Wei Hung. Built with Material for MkDocs.
 
 nav:
-  - ":material-home-outline: Home": index.md
-  - ":material-account-voice-outline: Interview":
-      - Overview: interview/index.md
-  - ":material-shield-check-outline: QA & Leadership":
-      - QA Strategy: qa/index.md
-      - Leadership: leadership/index.md
-  - ":material-notebook-outline: Notes":
+  - Home: index.md
+  - Test Strategy:
+      - Overview: test-strategy/index.md
+      - Risk-Based Testing: test-strategy/risk-based-testing.md
+      - Shift-Left Quality: test-strategy/shift-left-quality.md
+      - Test Coverage Decisions: test-strategy/coverage-decisions.md
+      - Release Readiness: test-strategy/release-readiness.md
+  - Playwright:
+      - Overview: playwright/index.md
+      - Handling Async UI: playwright/handling-async-ui.md
+      - Page Object Patterns: playwright/page-object-patterns.md
+      - Cross-Browser Reliability: playwright/cross-browser-reliability.md
+      - Visual Regression Testing: playwright/visual-regression.md
+  - Appium & Mobile:
+      - Overview: appium/index.md
+      - Shared iOS/Android Architecture: appium/shared-architecture.md
+      - Device Farm Integration: appium/device-farm.md
+      - Mobile Test Challenges: appium/mobile-challenges.md
+  - Python & Pytest:
+      - Overview: python/index.md
+      - Fixture Design: python/fixture-design.md
+      - Data-Driven Testing: python/data-driven-testing.md
+      - Custom Reporters: python/custom-reporters.md
+      - Testing Patterns: python/testing-patterns.md
+  - API Testing:
+      - Overview: api/index.md
+      - Contract Testing: api/contract-testing.md
+      - API Automation Patterns: api/automation-patterns.md
+      - Response Validation: api/response-validation.md
+  - CI/CD Integration:
+      - Overview: cicd/index.md
+      - Test Pipeline Design: cicd/pipeline-design.md
+      - Parallel Execution: cicd/parallel-execution.md
+      - Flaky Test Management: cicd/flaky-tests.md
+      - Quality Gates: cicd/quality-gates.md
+  - AI-Assisted Testing:
+      - Overview: ai-testing/index.md
+      - LLM Test Generation: ai-testing/llm-test-generation.md
+      - Testing AI Products: ai-testing/testing-ai-products.md
+      - AI in Test Maintenance: ai-testing/ai-maintenance.md
+      - Prompt Testing Strategies: ai-testing/prompt-testing.md
+  - Leadership:
+      - Overview: leadership/index.md
+      - Building QA Culture: leadership/building-qa-culture.md
+      - Bug Triage Systems: leadership/bug-triage.md
+      - Team Metrics That Matter: leadership/team-metrics.md
+      - Cross-Team Collaboration: leadership/cross-team-collaboration.md
+  - Defect Analysis:
+      - Overview: defect-analysis/index.md
+      - Root Cause Analysis: defect-analysis/root-cause-analysis.md
+      - Incident Retrospectives: defect-analysis/incident-retrospective.md
+      - Regression Prevention: defect-analysis/regression-prevention.md
+  - Notes:
       - Overview: notes/index.md
       - Automation Framework Adoption: notes/automation-framework-adoption.md
-  - ":material-bug-outline: Case Studies":
-      - Overview: real-bugs/index.md

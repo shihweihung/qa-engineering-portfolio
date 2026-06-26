@@ -1,18 +1,9 @@
 # Notes
 
-Learning notes from conversations, research, and self-study.
+Learning notes from conversations, research, and real engineering discussions.
 
-This section is intentionally informal. Notes here may be rough, partial, or still evolving. The goal is to capture useful thinking before it disappears — and refine it over time.
+This section is more informal than the rest of the portfolio. Notes here may be rougher, more opinionated, and still evolving. The goal is to capture useful thinking while it is fresh — and refine it over time.
 
-## Topics
+## Articles
 
-Notes will be organized by topic as they are added.
-
-Areas planned:
-
-- QA craft and testing fundamentals
-- Automation and tooling
-- Leadership and team dynamics
-- Career and job search
-- AI and LLM testing
-- Interview insights from conversations
+- **[Automation Framework Adoption](automation-framework-adoption.md)** — What happens when two teams each want to use their own framework, and how to make a decision that survives the politics
