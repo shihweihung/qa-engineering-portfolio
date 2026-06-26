@@ -1,51 +1,22 @@
-# Welcome
+# QA Lead Knowledge Base
 
-Welcome to the QA Interview Bible, a professional documentation website for building practical knowledge across software quality, testing craft, and career growth.
+A personal knowledge base for QA Lead interview preparation, quality engineering practice, and ongoing learning.
 
-## Purpose of this Knowledge Base
+This site collects notes from real work experience, conversations, and self-study — organized so they are useful both during a job search and after landing a role.
 
-This site is designed to centralize reusable notes, playbooks, and examples for QA professionals preparing for interviews, leading teams, and improving engineering quality.
+## What is here
 
-!!! info "How to use this site"
-    Start with the section most relevant to your current goal, then expand each area over time with notes, examples, and interview-ready stories.
+- **Interview** — QA Lead interview questions, answer frameworks, and company research notes
+- **QA & Leadership** — quality strategy, test planning, team practices, and process design
+- **Notes** — learning notes from discussions and research, organized by topic
+- **Case Studies** — generalized bug analyses and incident retrospectives
 
-!!! tip "Documentation style"
-    This site is structured like official technical documentation: clear navigation, section-based reading, and pages that can grow from quick notes into reusable reference material.
+## Who this is for
 
-## Roadmap
+Primarily for my own reference during a QA Lead job search. Written to be readable by anyone: hiring managers, engineering peers, or future teammates.
 
-1. Build foundational content for QA, automation, API, and mobile testing.
-2. Add structured interview answers, leadership case studies, and company research templates.
-3. Expand real-world bug writeups, AI testing strategies, and reusable career assets.
+## How to use this site
 
-## Reading Experience
-
-- :material-magnify: Search is enabled for fast lookups.
-- :material-theme-light-dark: Light and dark mode can be toggled from the header.
-- :material-format-list-bulleted-type: Table of contents follows you while reading.
-- :material-history: Each page can show its latest revision date.
-
-## Latest Updates
-
-- Initialized the documentation site with Material for MkDocs.
-- Added section placeholders for core QA knowledge areas.
-- Configured automatic GitHub Pages deployment with GitHub Actions.
-
-## Quick Checklist
-
-- [x] Documentation sections created
-- [x] Search and navigation enabled
-- [x] Mermaid diagrams supported
-- [x] Callouts and emoji enabled :sparkles:
-
-## Site Map Preview
-
-```mermaid
-graph TD
-    A["QA Interview Bible"] --> B["Career"]
-    A --> C["Resume"]
-    A --> D["Interview"]
-    A --> E["QA"]
-    A --> F["Automation"]
-    A --> G["Leadership"]
-```
+- Use the search bar for fast lookups
+- Browse by section when exploring a topic
+- Each page is written to stand alone — no need to read in order

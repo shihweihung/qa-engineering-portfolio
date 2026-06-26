@@ -46,7 +46,7 @@ All contributors should read these files before adding or revising content.
 - QA
 - Mobile
 - Automation
-- Nook
+- eReader
 - AI Testing
 - API
 - Leadership

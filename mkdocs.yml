@@ -90,35 +90,13 @@ copyright: Copyright &copy; 2026 Shih-Wei Hung. Built with Material for MkDocs.
 
 nav:
   - ":material-home-outline: Home": index.md
-  - ":material-briefcase-outline: Career":
-      - Overview: career/index.md
-  - ":material-file-account-outline: Resume":
-      - Overview: resume/index.md
   - ":material-account-voice-outline: Interview":
       - Overview: interview/index.md
-  - ":material-shield-check-outline: QA":
-      - Overview: qa/index.md
-  - ":material-cellphone-cog: Mobile":
-      - Overview: mobile/index.md
-  - ":material-robot-outline: Automation":
-      - Overview: automation/index.md
-  - ":material-bookshelf: Nook":
-      - Overview: nook/index.md
-  - ":material-brain: AI Testing":
-      - Overview: ai-testing/index.md
-  - ":material-api: API":
-      - Overview: api/index.md
-  - ":material-account-group-outline: Leadership":
-      - Overview: leadership/index.md
-  - ":material-bug-outline: Real Bugs":
+  - ":material-shield-check-outline: QA & Leadership":
+      - QA Strategy: qa/index.md
+      - Leadership: leadership/index.md
+  - ":material-notebook-outline: Notes":
+      - Overview: notes/index.md
+      - Automation Framework Adoption: notes/automation-framework-adoption.md
+  - ":material-bug-outline: Case Studies":
       - Overview: real-bugs/index.md
-  - ":material-office-building-outline: Company":
-      - Overview: company/index.md
-  - ":material-file-document-multiple-outline: Templates":
-      - Overview: writing-templates/index.md
-      - Knowledge Article: writing-templates/knowledge-article.md
-      - Interview Question: writing-templates/interview-question.md
-      - Bug Case Study: writing-templates/bug-case-study.md
-      - Resume Note: writing-templates/resume-note.md
-      - Company Research: writing-templates/company-research.md
-      - Learning Note: writing-templates/learning-note.md
