@@ -1,0 +1,84 @@
+site_name: QA Interview Bible
+site_description: Professional QA and software testing knowledge base
+site_url: https://shihweihung.github.io/qa-interview-bible/
+repo_url: https://github.com/shihweihung/qa-interview-bible
+repo_name: shihweihung/qa-interview-bible
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - javascripts/mermaid.js
+
+nav:
+  - Home: index.md
+  - Career:
+      - Overview: career/index.md
+  - Resume:
+      - Overview: resume/index.md
+  - Interview:
+      - Overview: interview/index.md
+  - QA:
+      - Overview: qa/index.md
+  - Mobile:
+      - Overview: mobile/index.md
+  - Automation:
+      - Overview: automation/index.md
+  - Nook:
+      - Overview: nook/index.md
+  - AI Testing:
+      - Overview: ai-testing/index.md
+  - API:
+      - Overview: api/index.md
+  - Leadership:
+      - Overview: leadership/index.md
+  - Real Bugs:
+      - Overview: real-bugs/index.md
+  - Company:
+      - Overview: company/index.md
