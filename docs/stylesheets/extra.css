@@ -1,0 +1,64 @@
+:root {
+  --doc-max-width: 76rem;
+}
+
+[data-md-color-scheme="default"] {
+  --md-default-fg-color: #1f2937;
+  --md-default-fg-color--light: #4b5563;
+  --md-typeset-a-color: #0f6cbd;
+  --md-accent-fg-color: #0f6cbd;
+  --md-code-fg-color: #0f172a;
+  --md-code-bg-color: #f3f6fb;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-typeset-a-color: #7cc4ff;
+  --md-accent-fg-color: #7cc4ff;
+}
+
+.md-grid {
+  max-width: var(--doc-max-width);
+}
+
+.md-typeset {
+  font-size: 0.84rem;
+  line-height: 1.75;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.8rem;
+}
+
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset p,
+.md-typeset li {
+  max-width: 70ch;
+}
+
+.md-typeset code,
+.md-typeset pre {
+  font-size: 0.8rem;
+}
+
+.md-header {
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.md-tabs {
+  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.md-footer-meta {
+  border-top: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.md-content__button {
+  font-weight: 600;
+}

@@ -3,19 +3,30 @@ site_description: Professional QA and software testing knowledge base
 site_url: https://shihweihung.github.io/qa-interview-bible/
 repo_url: https://github.com/shihweihung/qa-interview-bible
 repo_name: shihweihung/qa-interview-bible
+edit_uri: edit/master/docs/
 
 theme:
   name: material
   language: en
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  icon:
+    repo: fontawesome/brands/github
   features:
+    - navigation.path
     - navigation.tabs
     - navigation.top
     - navigation.sections
     - navigation.indexes
+    - navigation.footer
+    - navigation.instant
+    - navigation.tracking
     - toc.follow
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.action.edit
   palette:
     - scheme: default
       primary: blue grey
@@ -32,6 +43,10 @@ theme:
 
 plugins:
   - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+      type: datetime
 
 markdown_extensions:
   - admonition
@@ -51,34 +66,59 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
   - javascripts/mermaid.js
 
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/shihweihung/qa-interview-bible
+      name: GitHub repository
+  homepage: https://shihweihung.github.io/qa-interview-bible/
+
+copyright: Copyright &copy; 2026 Shih-Wei Hung. Built with Material for MkDocs.
+
 nav:
-  - Home: index.md
-  - Career:
+  - ":material-home-outline: Home": index.md
+  - ":material-briefcase-outline: Career":
       - Overview: career/index.md
-  - Resume:
+  - ":material-file-account-outline: Resume":
       - Overview: resume/index.md
-  - Interview:
+  - ":material-account-voice-outline: Interview":
       - Overview: interview/index.md
-  - QA:
+  - ":material-shield-check-outline: QA":
       - Overview: qa/index.md
-  - Mobile:
+  - ":material-cellphone-cog: Mobile":
       - Overview: mobile/index.md
-  - Automation:
+  - ":material-robot-outline: Automation":
       - Overview: automation/index.md
-  - Nook:
+  - ":material-bookshelf: Nook":
       - Overview: nook/index.md
-  - AI Testing:
+  - ":material-brain: AI Testing":
       - Overview: ai-testing/index.md
-  - API:
+  - ":material-api: API":
       - Overview: api/index.md
-  - Leadership:
+  - ":material-account-group-outline: Leadership":
       - Overview: leadership/index.md
-  - Real Bugs:
+  - ":material-bug-outline: Real Bugs":
       - Overview: real-bugs/index.md
-  - Company:
+  - ":material-office-building-outline: Company":
       - Overview: company/index.md
+  - ":material-file-document-multiple-outline: Templates":
+      - Overview: writing-templates/index.md
+      - Knowledge Article: writing-templates/knowledge-article.md
+      - Interview Question: writing-templates/interview-question.md
+      - Bug Case Study: writing-templates/bug-case-study.md
+      - Resume Note: writing-templates/resume-note.md
+      - Company Research: writing-templates/company-research.md
+      - Learning Note: writing-templates/learning-note.md
