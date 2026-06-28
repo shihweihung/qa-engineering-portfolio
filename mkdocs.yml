@@ -1,9 +1,9 @@
-site_name: QA Engineering Portfolio
-site_description: Practical articles on test strategy, automation, and quality engineering leadership
-site_url: https://shihweihung.github.io/qa-interview-bible/
-repo_url: https://github.com/shihweihung/qa-interview-bible
-repo_name: shihweihung/qa-interview-bible
-edit_uri: edit/master/docs/
+site_name: Shih-Wei Hung — QA Engineering Portfolio
+site_description: Senior QA Lead · Test Automation · SDET
+site_url: https://shihweihung.github.io/qa-engineering-portfolio/
+repo_url: https://github.com/shihweihung/qa-engineering-portfolio
+repo_name: shihweihung/qa-engineering-portfolio
+edit_uri: ""
 
 theme:
   name: material
@@ -14,19 +14,16 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
-    - navigation.path
     - navigation.tabs
     - navigation.top
     - navigation.sections
     - navigation.indexes
     - navigation.footer
     - navigation.instant
-    - navigation.tracking
     - toc.follow
     - search.suggest
     - search.highlight
     - content.code.copy
-    - content.action.edit
   palette:
     - scheme: default
       primary: blue grey
@@ -43,10 +40,6 @@ theme:
 
 plugins:
   - search
-  - git-revision-date-localized:
-      enable_creation_date: true
-      fallback_to_build_date: true
-      type: datetime
 
 markdown_extensions:
   - admonition
@@ -58,12 +51,7 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
@@ -72,75 +60,56 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
-extra_javascript:
-  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
-  - javascripts/mermaid.js
-
 extra_css:
   - stylesheets/extra.css
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/shihweihung/qa-interview-bible
-      name: GitHub repository
-  homepage: https://shihweihung.github.io/qa-interview-bible/
+      link: https://github.com/shihweihung/qa-engineering-portfolio
+      name: GitHub
+  homepage: https://shihweihung.github.io/qa-engineering-portfolio/
 
-copyright: Copyright &copy; 2026 Shih-Wei Hung. Built with Material for MkDocs.
+copyright: Copyright &copy; 2026 Shih-Wei Hung
 
 nav:
   - Home: index.md
-  - Test Strategy:
-      - Overview: test-strategy/index.md
-      - Risk-Based Testing: test-strategy/risk-based-testing.md
-      - Shift-Left Quality: test-strategy/shift-left-quality.md
-      - Test Coverage Decisions: test-strategy/coverage-decisions.md
-      - Release Readiness: test-strategy/release-readiness.md
-  - Playwright:
-      - Overview: playwright/index.md
-      - Handling Async UI: playwright/handling-async-ui.md
-      - Page Object Patterns: playwright/page-object-patterns.md
-      - Cross-Browser Reliability: playwright/cross-browser-reliability.md
-      - Visual Regression Testing: playwright/visual-regression.md
-  - Appium & Mobile:
-      - Overview: appium/index.md
-      - Shared iOS/Android Architecture: appium/shared-architecture.md
-      - Device Farm Integration: appium/device-farm.md
-      - Mobile Test Challenges: appium/mobile-challenges.md
-  - Python & Pytest:
-      - Overview: python/index.md
-      - Fixture Design: python/fixture-design.md
-      - Data-Driven Testing: python/data-driven-testing.md
-      - Custom Reporters: python/custom-reporters.md
-      - Testing Patterns: python/testing-patterns.md
-  - API Testing:
-      - Overview: api/index.md
-      - Contract Testing: api/contract-testing.md
-      - API Automation Patterns: api/automation-patterns.md
-      - Response Validation: api/response-validation.md
-  - CI/CD Integration:
-      - Overview: cicd/index.md
-      - Test Pipeline Design: cicd/pipeline-design.md
-      - Parallel Execution: cicd/parallel-execution.md
-      - Flaky Test Management: cicd/flaky-tests.md
-      - Quality Gates: cicd/quality-gates.md
-  - AI-Assisted Testing:
-      - Overview: ai-testing/index.md
-      - LLM Test Generation: ai-testing/llm-test-generation.md
-      - Testing AI Products: ai-testing/testing-ai-products.md
-      - AI in Test Maintenance: ai-testing/ai-maintenance.md
-      - Prompt Testing Strategies: ai-testing/prompt-testing.md
+  - About: about/index.md
+  - Resume: resume/index.md
+  - Experience:
+      - Overview: experience/index.md
+      - Mobile Application Testing: experience/mobile-testing.md
+      - API Testing: experience/api-testing.md
+      - Cross-Region Collaboration: experience/cross-region-collaboration.md
+      - Release Management: experience/release-management.md
+      - Test Strategy: experience/test-strategy.md
+      - Automation Planning: experience/automation-planning.md
+  - Projects:
+      - Overview: projects/index.md
+      - Mobile Reading App: projects/mobile-reading-app.md
+      - Automation Framework Decision: projects/automation-framework-decision.md
+      - Mobile Automation Framework: projects/mobile-automation-framework.md
+      - Production Incident Investigation: projects/production-incident.md
+  - Automation:
+      - Overview: automation/index.md
+      - Python & Pytest: automation/python-pytest.md
+      - Playwright: automation/playwright.md
+      - Appium: automation/appium.md
+      - API Automation: automation/api-automation.md
+  - AI-Assisted QA:
+      - Overview: ai-assisted-qa/index.md
+      - Test Case Generation: ai-assisted-qa/test-generation.md
+      - Bug Investigation: ai-assisted-qa/bug-investigation.md
+      - Daily Workflow: ai-assisted-qa/daily-workflow.md
+  - Mobile Testing: mobile-testing/index.md
+  - API Testing: api-testing/index.md
   - Leadership:
       - Overview: leadership/index.md
-      - Building QA Culture: leadership/building-qa-culture.md
-      - Bug Triage Systems: leadership/bug-triage.md
-      - Team Metrics That Matter: leadership/team-metrics.md
-      - Cross-Team Collaboration: leadership/cross-team-collaboration.md
-  - Defect Analysis:
-      - Overview: defect-analysis/index.md
-      - Root Cause Analysis: defect-analysis/root-cause-analysis.md
-      - Incident Retrospectives: defect-analysis/incident-retrospective.md
-      - Regression Prevention: defect-analysis/regression-prevention.md
-  - Notes:
-      - Overview: notes/index.md
-      - Automation Framework Adoption: notes/automation-framework-adoption.md
+      - QA Planning: leadership/qa-planning.md
+      - Mentoring: leadership/mentoring.md
+      - Cross-Functional Communication: leadership/cross-functional.md
+  - Knowledge Notes:
+      - Overview: knowledge-notes/index.md
+      - Framework Adoption: knowledge-notes/framework-adoption.md
+      - Flaky Test Management: knowledge-notes/flaky-tests.md
+      - Release Readiness: knowledge-notes/release-readiness.md
