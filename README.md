@@ -1,4 +1,4 @@
-# Shih-Wei Hung — QA Engineering Portfolio
+# Alex (Shih-Wei) Hung — QA Engineering Portfolio
 
 **Senior QA Lead · Test Automation Engineer · SDET**
 
@@ -11,6 +11,7 @@ Quality engineer with hands-on experience leading QA across cross-platform mobil
 | Domain | Skills & Tools |
 |---|---|
 | **Mobile Testing** | iOS · Android · Appium · Device Farm · Simulator/Emulator |
+| **Connected Device & IoT** | Bluetooth · Wi-Fi · MQTT · Device-to-app integration · System integration |
 | **Web Automation** | Playwright · Python · pytest · Page Object Model |
 | **API Testing** | REST · Postman · Contract Testing · Automated Validation |
 | **CI/CD** | GitHub Actions · Pipeline Design · Quality Gates |

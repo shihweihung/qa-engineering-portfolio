@@ -1,4 +1,4 @@
-site_name: Shih-Wei Hung — QA Engineering Portfolio
+site_name: Alex (Shih-Wei) Hung — QA Engineering Portfolio
 site_description: Senior QA Lead · Test Automation · SDET
 site_url: https://shihweihung.github.io/qa-engineering-portfolio/
 repo_url: https://github.com/shihweihung/qa-engineering-portfolio
@@ -70,7 +70,7 @@ extra:
       name: GitHub
   homepage: https://shihweihung.github.io/qa-engineering-portfolio/
 
-copyright: Copyright &copy; 2026 Shih-Wei Hung
+copyright: Copyright &copy; 2026 Alex (Shih-Wei) Hung
 
 nav:
   - Home: index.md
@@ -79,6 +79,7 @@ nav:
   - Experience:
       - Overview: experience/index.md
       - Mobile Application Testing: experience/mobile-testing.md
+      - Connected Device & IoT Testing: experience/connected-device.md
       - API Testing: experience/api-testing.md
       - Cross-Region Collaboration: experience/cross-region-collaboration.md
       - Release Management: experience/release-management.md
