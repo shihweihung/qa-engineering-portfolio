@@ -89,14 +89,10 @@ nav:
       - Overview: projects/index.md
       - Mobile Reading App: projects/mobile-reading-app.md
       - Automation Framework Decision: projects/automation-framework-decision.md
-      - Mobile Automation Framework: projects/mobile-automation-framework.md
       - Production Incident Investigation: projects/production-incident.md
   - Automation:
       - Overview: automation/index.md
-      - Python & Pytest: automation/python-pytest.md
-      - Playwright: automation/playwright.md
-      - Appium: automation/appium.md
-      - API Automation: automation/api-automation.md
+      - API Testing: automation/api-automation.md
   - AI-Assisted QA:
       - Overview: ai-assisted-qa/index.md
       - Test Case Generation: ai-assisted-qa/test-generation.md

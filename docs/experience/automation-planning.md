@@ -1,53 +1,31 @@
 # Automation Planning
 
-## What I've Done
+## My Role in Automation
 
-Automation planning is about deciding where automation investment will actually pay off — not just writing tests because automation is supposed to be good.
+I've participated in automation planning discussions and framework evaluation throughout my career, but I haven't been the primary person building and shipping automation suites. My contribution has been on the strategy and decision side — what to automate, which framework to adopt, how to sequence the work — while implementation was typically owned by other team members or an offshore team.
 
-I've built automation roadmaps from early stages where there was no automation at all, through to established frameworks with CI integration. The decisions about what to automate, when, and how much to invest have been mine to make and defend.
+This distinction matters. The thinking I describe below is genuine; the hands-on implementation experience is limited.
 
 ---
 
-## Responsibilities
+## What I've Contributed to Automation Discussions
 
-**Identifying what's worth automating**
+**What's worth automating**
 
-Not everything should be automated. The scenarios worth automating are: high-frequency regressions that are tedious to run manually, critical user flows where a failure would be embarrassing to miss, and stable features where the automation ROI improves over time.
+Not everything should be automated. In planning discussions, I've pushed for focusing automation on: high-frequency regressions that are tedious to run manually, critical user flows where missing a failure would be a serious problem, and stable areas where the investment pays off over time.
 
-The scenarios that are often not worth automating (at least early on): rapidly changing UI, features with complex setup requirements that make stable automation expensive, and edge cases that only manifest under very specific conditions.
+The common mistake I've seen is automating everything, including rapidly-changing UI and complex setup scenarios where the maintenance cost exceeds the value. Part of my contribution has been arguing for selectivity over volume.
 
-**Sequencing the work**
+**Framework evaluation**
 
-When building an automation suite from scratch, sequencing matters. I start with the highest-risk, highest-frequency scenarios — the ones that provide value immediately and build team confidence in the framework. Complex, lower-value scenarios come later, after the infrastructure is proven.
-
-**Framework selection and architecture**
-
-Choosing a framework isn't just a technical decision. It also depends on who will maintain it, what the team's skill set is, and how much investment is realistic. I've been in situations where a simpler, lower-capability framework was the right choice because the team could actually maintain it, and a more powerful but complex framework would have been abandoned within a year.
+I participated in a multi-month evaluation of BDD (Gherkin/Behave) versus Python pytest for a shared automation effort between teams. The discussion was as much about team dynamics and ownership as it was about technical merit — which team would maintain it, what their skill set was, whether the "readable tests" promise of BDD would actually be realized in practice. The outcome was pytest, and the reasoning is documented in the [projects section](../projects/automation-framework-decision.md).
 
 **Communicating automation coverage to stakeholders**
 
-Automation coverage is invisible to most stakeholders unless you make it visible. I report on what's automated, what that coverage means for release confidence, and what's still dependent on manual testing. That information shapes release decisions and helps product understand what they're getting from QA investment.
+Automation coverage is invisible unless you make it explicit. I've contributed to discussions about how to report what's automated, what that means for release confidence, and what still depends on manual testing.
 
 ---
 
-## Challenges
+## What I'm Learning
 
-**Building automation while also doing manual testing**
-
-Automation work competes with sprint work. Building good test infrastructure while also covering current sprint features is a capacity problem that doesn't go away. I've managed it by treating automation work as part of sprint planning — it goes on the board, gets estimated, and doesn't happen invisibly in the background.
-
-**Keeping automation maintained as the product changes**
-
-An automation suite that isn't maintained becomes a liability. I've seen suites that took significant engineering effort to build become useless in six months because no one owned keeping them current through product changes. I treat automation maintenance as a normal cost of development, not an exceptional task.
-
-**Managing expectations about what automation does and doesn't guarantee**
-
-Automated tests passing doesn't mean the product works. Stakeholders sometimes read a green CI build as "QA done." I try to be clear about what the automation covers and what still requires judgment — automated regression plus exploratory testing on new features is a different coverage level than automated regression alone.
-
----
-
-## Lessons Learned
-
-Automation is most valuable when it frees up QA time for the work that can't be automated — exploratory testing, judgment calls, cross-platform comparison, and catching the things that don't fit a predefined scenario.
-
-The worst automation investments I've seen were driven by the goal of high test counts rather than by the goal of useful signal. More tests is not always better. Reliable, fast, meaningful tests are better.
+I'm currently building hands-on implementation skills — Python/pytest basics, Appium concepts, Playwright exploration — using AI tools to help me write and understand code. The goal is to make my strategy-level judgment more grounded in implementation reality.

@@ -81,7 +81,10 @@ Bluetooth · Wi-Fi · MQTT · Device-to-app interaction · System integration te
 REST · Postman · Schema validation · Error path coverage · Service integration
 
 **Test Automation**
-Python · pytest · Appium · Playwright · Page Object Model · CI integration
+Postman · Basic API verification · Automation strategy & framework evaluation
+
+**Currently Learning**
+Python · pytest · Appium · Playwright (hands-on skill development, AI-assisted)
 
 **AI-Assisted QA**
 Test case generation · Requirement analysis · Bug investigation · LLM workflow integration

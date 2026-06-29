@@ -1,42 +1,30 @@
-# API Automation
+# API Testing
 
-API automation is the test layer with the best return on investment: it's fast, it's stable, and when it fails, the failure is usually informative.
-
----
-
-## How I Use It
-
-**Centralized API client**
-
-I build API tests around a client class that handles authentication, base URLs, and request construction centrally. Tests use the client's methods rather than constructing requests directly. This means authentication changes and base URL changes require a one-file update, not changes across every test.
-
-**Validation beyond status codes**
-
-Checking `status_code == 200` is necessary but not sufficient. I validate response schemas — required fields are present, types are correct, values are within expected ranges — and I validate business logic: a newly created user should have the default role, a successful purchase should update the account state.
-
-I've used `jsonschema` for automated schema validation, which catches breaking API changes early rather than letting them propagate to UI failures.
-
-**Error path coverage**
-
-Developers test the happy path. I spend deliberate effort on error paths: malformed payloads, missing required fields, expired tokens, rate limits, and concurrent requests. Many API bugs hide in error handling code that is rarely exercised.
-
-**CI integration**
-
-API tests run in CI on every significant PR. They're fast enough that they don't meaningfully increase CI time, and they catch regressions on API behavior before they surface as UI test failures or user reports.
+This is where my practical automation experience actually lives.
 
 ---
 
-## Tools
+## Postman
 
-- **Postman** — Exploratory testing, manual validation, collection sharing with the team
-- **Python + requests + pytest** — Automated API test suites
-- **jsonschema** — Response schema validation
-- **GitHub Actions** — CI integration
+Postman has been my primary tool for API testing throughout my career. I use it for:
+
+- **Exploratory testing** — understanding how an API behaves before writing formal test cases
+- **Manual verification** — validating specific endpoints during feature development and issue troubleshooting
+- **Reproducing bugs** — isolating API behavior from UI behavior when investigating production issues
+- **Sharing test scenarios** — exporting collections that other team members can use
+
+I'm comfortable constructing requests, setting up authentication, using environment variables across different environments (dev/staging/production), and reading and interpreting response bodies.
 
 ---
 
-## What I've Built
+## Basic API Verification in Practice
 
-- Automated API test suites covering authentication, content APIs, and purchase flows
-- Schema validation for key API responses
-- Postman collections documenting API behavior shared with the broader team
+In my current role, API verification with Postman has been part of the feature validation workflow — checking that new endpoints return the expected structure and values, verifying error responses for invalid inputs, and confirming that changes in one service are reflected correctly in dependent services.
+
+This isn't automated in the sense of running in CI — it's manual verification using Postman as the tool. The value is in the systematic coverage: checking not just the happy path, but the common error conditions and edge cases that developers may not have tested explicitly.
+
+---
+
+## What I Understand But Haven't Shipped
+
+From participating in automation discussions and my current learning, I understand how Python + requests + pytest API automation suites work conceptually — centralized clients, fixture-based setup, schema validation with jsonschema. I haven't owned the delivery of a production API automation suite, but I understand what one needs to look like and why.
