@@ -20,9 +20,6 @@ This portfolio documents how I think about quality, the engineering problems I'v
 - **[Resume](resume/index.md)**
   Full professional background
 
-- **[Experience](experience/index.md)**
-  Capabilities by domain
-
 - **[Projects](projects/index.md)**
   Engineering challenges with real context
 
